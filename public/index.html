@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TireShop — автомобільні шини та диски. Обирай якість і надійність для свого автомобіля.">
+    <title>TireShop — Шини та диски</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav">
+            <a href="#home" class="logo">TIRE<span>SHOP</span><small>.</small></a>
+
+            <nav>
+                <a href="#home">Головна</a>
+                <a href="#catalog">Каталог</a>
+                <a href="#about">Про нас</a>
+                <a href="#contacts">Контакти</a>
+            </nav>
+
+            <a href="#catalog" class="cart">
+                <span>Кошик</span>
+                <span class="cart-count" id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <p class="eyebrow">TIRE & WHEEL STORE</p>
+                <h1>Твоя дорога.<br><span>Твій стиль.</span></h1>
+                <p class="hero-description">
+                    Якісні шини та стильні диски для тих,
+                    хто цінує комфорт, безпеку і швидкість.
+                </p>
+                <a href="#catalog" class="primary-btn">ПЕРЕГЛЯНУТИ КАТАЛОГ <span>→</span></a>
+            </div>
+            <div class="hero-bottom">
+                <span>ЯКІСТЬ • НАДІЙНІСТЬ • КОМФОРТ</span>
+                <span>01 / 03</span>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="container benefits-grid">
+                <div class="benefit">
+                    <span class="benefit-icon">01</span>
+                    <div><h3>Перевірена якість</h3><p>Товари від відомих брендів</p></div>
+                </div>
+                <div class="benefit">
+                    <span class="benefit-icon">02</span>
+                    <div><h3>Широкий вибір</h3><p>Шини та диски для авто</p></div>
+                </div>
+                <div class="benefit">
+                    <span class="benefit-icon">03</span>
+                    <div><h3>Надійність</h3><p>Комфорт у кожній поїздці</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog section" id="catalog">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">НАШ АСОРТИМЕНТ</p>
+                        <h2>Популярні <span>товари</span></h2>
+                    </div>
+                    <p class="section-description">
+                        Обирай найкраще для свого автомобіля.
+                        Якість починається з правильного вибору.
+                    </p>
+                </div>
+
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">Усі товари</button>
+                    <button class="filter-btn" data-filter="tires">Шини</button>
+                    <button class="filter-btn" data-filter="wheels">Диски</button>
+                </div>
+
+                <div class="products">
+                    <article class="product" data-category="tires">
+                        <div class="product-image">
+                            <span class="product-tag">ПОПУЛЯРНЕ</span>
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=85" alt="Автомобільна шина Michelin">
+                        </div>
+                        <div class="product-info">
+                            <p class="product-category">АВТОМОБІЛЬНІ ШИНИ</p>
+                            <h3>Michelin Pilot Sport</h3>
+                            <p class="product-description">Літня шина для динамічної їзди</p>
+                            <div class="product-bottom">
+                                <strong>4 500 грн</strong>
+                                <button class="add-btn" data-name="Michelin Pilot Sport" data-price="4500">ДОДАТИ +</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product" data-category="tires">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1517524206127-48bbd363f3d7?auto=format&fit=crop&w=800&q=85" alt="Автомобільна шина Continental">
+                        </div>
+                        <div class="product-info">
+                            <p class="product-category">АВТОМОБІЛЬНІ ШИНИ</p>
+                            <h3>Continental PremiumContact</h3>
+                            <p class="product-description">Комфорт і безпека на дорозі</p>
+                            <div class="product-bottom">
+                                <strong>3 900 грн</strong>
+                                <button class="add-btn" data-name="Continental PremiumContact" data-price="3900">ДОДАТИ +</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product" data-category="wheels">
+                        <div class="product-image">
+                            <span class="product-tag">ХІТ ПРОДАЖУ</span>
+                            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=85" alt="Автомобіль зі стильними дисками BBS">
+                        </div>
+                        <div class="product-info">
+                            <p class="product-category">ЛЕГКОСПЛАВНІ ДИСКИ</p>
+                            <h3>BBS R18</h3>
+                            <p class="product-description">Стильні диски для твого авто</p>
+                            <div class="product-bottom">
+                                <strong>6 200 грн</strong>
+                                <button class="add-btn" data-name="BBS R18" data-price="6200">ДОДАТИ +</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product" data-category="wheels">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=800&q=85" alt="Спортивний автомобіль з дисками OZ Racing">
+                        </div>
+                        <div class="product-info">
+                            <p class="product-category">СПОРТИВНІ ДИСКИ</p>
+                            <h3>OZ Racing R17</h3>
+                            <p class="product-description">Спортивний характер і дизайн</p>
+                            <div class="product-bottom">
+                                <strong>5 800 грн</strong>
+                                <button class="add-btn" data-name="OZ Racing R17" data-price="5800">ДОДАТИ +</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="container about-content">
+                <div>
+                    <p class="eyebrow">ЧОМУ TIRE SHOP?</p>
+                    <h2>Правильний вибір<br><span>для кожної дороги.</span></h2>
+                </div>
+                <p>
+                    TireShop — навчальний демонстраційний інтернет-магазин
+                    автомобільних шин і дисків. Тут можна переглянути каталог,
+                    відфільтрувати товари та додати їх до кошика.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacts">
+        <div class="container footer-content">
+            <a href="#home" class="logo">TIRE<span>SHOP</span><small>.</small></a>
+            <p>Шини та диски для твого автомобіля.</p>
+            <p class="copyright">© 2026 TireShop. Усі права захищені.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
